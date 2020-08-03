@@ -4,24 +4,79 @@
               rel="stylesheet"> 
 
         <style>
-            #wrapper {
-              background-color: rgba(0, 0, 0, 0.350);
-              width: 200px;
-              padding: 150px;
-              text-transform: uppercase;
+            .col {
+                height: 100vh;
+                background: url(https://i.pinimg.com/originals/4d/3e/ec/4d3eec8a40d78c6ce3a2d4a3a5ae8d13.jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
 
+            #wrapper {
+              background-color: rgba(0, 0, 0, 0.500);           
+              padding: 25px;
+              text-transform: uppercase;
+              width: 600px;
+            }
+
+            #forgot-password {
+                color: whitesmoke;
+                text-transform: capitalize; 
+                text-align: center;   
+                text-transform: inherit;                                         
+            }
+
+            #forgot-password span {
+                text-decoration: underline;
+            }
+
+            button {
+                border: none;
+                display: block;
+                margin: 0 auto;
+                margin-bottom: 15px;
+                padding: 12px;
+                width: 85%;
+            }
+
+            h3 {
+                color: black;
+                margin-bottom: 24px;
+                text-align: center;
+            }
+
+            input {         
+                background-color: rgba(0, 0, 0, 0.600);
+                border: none;
+                color:whitesmoke;
+                margin-bottom: 28px;
+                padding:18px;
+                width:100%;
+            }
+
+            hr {
+                margin-top: 28px;
+                margin-bottom: 28px;
             }
         </style>
-
     </head>
-
-
     <body>
         <div class="container-fluid">
             <div class="row">
-                <div class="col">
+                <div class="col d-flex align-items-center justify-content-center">
                     <div id="wrapper">
                         <h3>Members Only Login</h3>
+
+                        <input placeholder="Username">
+                        <input placeholder="Password">
+
+                        <button class="d-block">Login</button>
+                        <p id="forgot-password">Forgot Password? <span>Click Here</span></p>
+  
+                        <hr> 
+
+                        <button>Register</button>
+
                     </div>
                 </div>
             </div>
