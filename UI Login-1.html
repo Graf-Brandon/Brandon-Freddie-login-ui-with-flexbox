@@ -4,7 +4,7 @@
               rel="stylesheet"> 
 
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
-        rel="style-sheet">
+        rel="stylesheet">
 
         <style>
             .col {
@@ -23,7 +23,7 @@
             }
 
             #forgot-password {
-                color: whitesmoke;
+                color:rgba(255, 255, 255, 0.527);
                 text-transform: capitalize; 
                 text-align: center;   
                 text-transform: inherit;                                         
@@ -49,7 +49,7 @@
             }
 
             input {         
-                background-color: rgba(0, 0, 0, 0.600);
+                background-color: rgba(0, 0, 0, 0.500);
                 border: none;
                 color:whitesmoke;
                 margin-bottom: 28px;
@@ -59,14 +59,21 @@
 
             input, 
             .icon-wrapper {
-                background-color: rgba(0, 0, 0, 0.600);
-                height: 50px;
+                height: 48px;
             }
 
             .icon-wrapper {
-                width: 50px;
+                align-items: center;
+                background-color: rgba(0, 0, 0, .850);
+                display: flex;
+                justify-content: center;
+                width: 48px;
             }
 
+            .icon-wrapper i {
+                color: rgb(255, 255, 255);
+            }
+            
             hr {
                 margin-top: 28px;
                 margin-bottom: 28px;
@@ -82,18 +89,22 @@
 
                         <h3>Members Only Login</h3>
 
+                            <div class="icon-wrapper">
+                              <i class="fa fa-user-secret"></i>
+                            </div>                        
                         <input placeholder="Username">
-                        <div input placeholder="Password">
-                            <label class="lock" for="login-password"></label>
-                            <input ref="password" type="password" placeholder="Password">
-                       
 
+                            <div class="icon-wrapper">
+                                <i class="fa fa-unlock-alt"></i>
+                            </div>
+                        <input placeholder="Password" type="password" name="password">                          
                         <button class="d-block">Login</button>
-                        <p id="forgot-password">Forgot Password? <span>Click Here</span></p>
+                        <p id="forgot-password">Forgot Password?</p>
                         
                         <hr> 
 
                         <button>Register</button>
+
                         </div>
                     </div>
                 </div>
