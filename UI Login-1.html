@@ -3,6 +3,9 @@
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
               rel="stylesheet"> 
 
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+        rel="style-sheet">
+
         <style>
             .col {
                 height: 100vh;
@@ -54,10 +57,21 @@
                 width:100%;
             }
 
+            input, 
+            .icon-wrapper {
+                background-color: rgba(0, 0, 0, 0.600);
+                height: 50px;
+            }
+
+            .icon-wrapper {
+                width: 50px;
+            }
+
             hr {
                 margin-top: 28px;
                 margin-bottom: 28px;
             }
+
         </style>
     </head>
     <body>
@@ -65,21 +79,22 @@
             <div class="row">
                 <div class="col d-flex align-items-center justify-content-center">
                     <div id="wrapper">
+
                         <h3>Members Only Login</h3>
 
                         <input placeholder="Username">
                         <div input placeholder="Password">
                             <label class="lock" for="login-password"></label>
-                            <input id="password" type="password" class="form-input" placeholder="Password" required>
-                        </div>
+                            <input ref="password" type="password" placeholder="Password">
+                       
 
                         <button class="d-block">Login</button>
                         <p id="forgot-password">Forgot Password? <span>Click Here</span></p>
-  
+                        
                         <hr> 
 
                         <button>Register</button>
-
+                        </div>
                     </div>
                 </div>
             </div>
